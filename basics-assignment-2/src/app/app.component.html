@@ -6,15 +6,19 @@
 </ol>
 
 <label>User Name</label>
-<input 
+<!-- <input 
   type="text" 
   class="form-control"
   [(ngModel)]="userName"
-  (input)="onUpdateUserName($event)"/>
+  (input)="onUpdateUserName($event)"/> -->
+<input 
+  type="text" 
+  class="form-control"
+  [(ngModel)]="userName"/>
 <p>{{userName}}</p>
 <button 
   class="btn btn-primary"
-  [disabled]="isClearUserNameDisabled"
+  [disabled]="!userName"
   (click)="onClearUser()">
   Clear User
 </button>
