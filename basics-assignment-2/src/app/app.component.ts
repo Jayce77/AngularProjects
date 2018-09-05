@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   userName: string = '';
-  isClearUserNameDisabled: boolean = true;
+  // isClearUserNameDisabled: boolean = true;
 
-  onUpdateUserName(event: any): void {
-    this.isClearUserNameDisabled = !event.target.value
-  }
+  // onUpdateUserName(event: any): void {
+  //   this.isClearUserNameDisabled = !event.target.value
+  // }
 
   onClearUser(): void {
     this.userName = '';
-    this.isClearUserNameDisabled = true;
+    // this.isClearUserNameDisabled = true;
   }
 }
